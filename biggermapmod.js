@@ -28,6 +28,24 @@ function biggerMapMod(api){
     uraniumore: 3 * resourceCountMult
   }};
 
+	api.registries.mapLayout.findById("desert").__proto__.getResourceCounts = function(){return {
+		crystal: 12 * resourceCountMult,
+		tree: 19 * resourceCountMult,
+    rock: 9 * resourceCountMult,
+    ironore: 7 * resourceCountMult,
+    coalore: 5 * resourceCountMult,
+    uraniumore: 3 * resourceCountMult
+  }};
+
+	api.registries.mapLayout.findById("ice").__proto__.getResourceCounts = function(){return {
+		crystal: 12 * resourceCountMult,
+		tree: 19 * resourceCountMult,
+    rock: 9 * resourceCountMult,
+    ironore: 7 * resourceCountMult,
+    coalore: 5 * resourceCountMult,
+    uraniumore: 3 * resourceCountMult
+  }};
+
 	// Define mod implementation function to get root
     function moreZoom(root){
         // Set minimum zoom
