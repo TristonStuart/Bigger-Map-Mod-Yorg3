@@ -8,6 +8,10 @@ function biggerMapMod(api){
 	// Normal is 40 x 40
 	api.registries.mapLayout.findById("tutorial").__proto__.getNumTilesX = function(){return 150};
 	api.registries.mapLayout.findById("tutorial").__proto__.getNumTilesY = function(){return 150};
+	api.registries.mapLayout.findById("desert").__proto__.getNumTilesX = function(){return 150};
+	api.registries.mapLayout.findById("desert").__proto__.getNumTilesY = function(){return 150};
+	api.registries.mapLayout.findById("ice").__proto__.getNumTilesX = function(){return 150};
+	api.registries.mapLayout.findById("ice").__proto__.getNumTilesY = function(){return 150};
 	
 	// Set Resource Count Multiplier
 	// Note : To have the same ammount of resource density you need to take your (X * Y) devided by (40 * 40). Set this as the resource multiplier.
