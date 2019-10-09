@@ -38,7 +38,7 @@ function biggerMapMod(api){
   }};
 
 	api.registries.mapLayout.findById("ice").__proto__.getResourceCounts = function(){return {
-		crystal: 12 * resourceCountMult,
+		crystal: 30 * resourceCountMult,
 		tree: 19 * resourceCountMult,
     rock: 9 * resourceCountMult,
     ironore: 7 * resourceCountMult,
